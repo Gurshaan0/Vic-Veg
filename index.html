@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vic Veg</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" href="download.jpg" type="image" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1><span>Vic </span>Veg</h1>
+    </div>
+    <ul id="menuList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+        <li><a href="produce.html">Produce</a></li>
+
+    </ul>
+    <div class="menu-icon">
+      <i class="bx bx-list-ul" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
+  <div class="story">
+    <h2>Our Story</h2>
+    <br>
+    <p>Vic Veg Farm is one of the largest producers of quality Cauliflower, Cabbage ,Stripe Egg Plant, Baby Black Egg
+      Plant , Bull Horn Chilli , Thai Chilli , Beans, Zucchini and Baby broccoli in Australia.</p>
+    <br>
+    <p>Family owned, we have been farming at Katandra West VIC. Our great location, with its unique soil profile, gives
+      us cool nights and warm days for the ideal growing conditions.</p>
+    
+  </div>
+  <div class="img">
+    <img src="images/planting-3-1024x502.jpg" alt="">
+  </div>
+  <div class="img-infi">
+    <img src="images/0AC9E59A-BA14-44FA-AD76-B42F084E47E6.JPG" alt="">
+    <img src="images/4362C5E0-7992-4F60-9CF6-36CEBF712F79.JPG" alt="">
+    <img src="images/60B38AA9-BD92-41D0-B031-1BDAF5A35F98.JPG" alt="">
+    <img src="images/F17FCBA2-6248-4C32-85C4-740221CCA72C.JPG" alt="">
+    <img src="images/IMG_9535.jpg" alt="">
+    <img src="images/IMG_9501.jpg" alt="">
+    <img src="images/IMG_9566.jpg" alt="">
+    <img src="images/IMG_9536.jpg" alt="">
+    <img src="images/F17FCBA2-6248-4C32-85C4-740221CCA72C.JPG" alt="">
+  </div>
+  <div class="clear">
+    
+  </div>
+  <div class="produce-head">
+    <h1>Our Produce</h1>
+  </div>
+  
+  <div class="produce">
+    
+    <div class="block1">
+      <h2>Cabbage</h2>
+      <br>
+      <p>known for its dense, tightly packed heads of leaves and its use in dishes like coleslaw, sauerkraut, and various global cuisines.</p>
+      <img src="images/cabbage.jpeg" alt="">
+    </div>
+    <div class="block2">
+      <h2>Jalepeno</h2>
+      <br>
+      <p>They are rich in vitamins, particularly vitamin C, and offer health benefits such as antioxidant and anti-inflammatory properties, potential for weight loss</p>
+      <img src="images/jalepeno.jpg" alt="">
+    </div>
+    <div class="block3">
+      <h2>Stripe Egg Plant</h2>
+      <br>
+      <p>They are a good source of vitamins, minerals, fiber, and antioxidants. While their color fades upon cooking, the qualities of their firm texture and mild, sweet flavor are maintained.</p>
+      <img src="images/Stripe Egg plant.JPG" alt="">
+    </div>
+    <div class="block5">
+      <h2>Sweet Banana</h2>
+      <br>
+      <p>Looks like a chilli; tastes like a sweet pepper. Sweet Banana capsicums are a surprise. They have the elongated shape you'd expect from a hot chilli, but they have the sweet flavour of bell peppers. </p>
+      <img src="images/Sweet Banana.JPG" alt="">
+    </div>
+    <div class="block5">
+      <h2>Tomato</h2>
+      <br>
+      <p>Tomatoes are high in nutritional and health-promoting qualities due to being rich in vitamins , minerals, and potent antioxidants like lycopene, beta-carotene, and flavonoids. </p>
+      <img src="images/IMG_9535.jpg" alt="">
+    </div>
+    
+  </div>
+  <form action="produce.html">
+  <div class="produce-btn">
+    <button action="produce.html">Discover More</button>
+  </div>
+  </form>
+  <div class="followus-head"><h1>Follow Us</h1></div>
+  <div class="followus">
+    
+    <span><a href="https://www.instagram.com/vicvegfarm/"><i class='bx bxl-instagram'></i></a></span>
+    <a href="https://www.facebook.com/people/VIC-VEG/100076515081544/"><i class='bx bxl-facebook-circle' ></i></a>
+  </div>
+  
+  
+  
+  
+  
+  
+  <script>
+    let menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>

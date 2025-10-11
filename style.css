@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins,sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(images/logo1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.113);
+    position: relative;
+    height: 90px;
+    backdrop-filter: blur(3px);
+    background-color: #059212;
+    width: 100%;
+}
+
+.logo{
+    color: #fffafa; 
+    font-size: 32px;
+}
+.logo h1 span{
+    color: chartreuse;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    border-radius: 40px;
+    padding: 20px;
+    background-color: rgba(128, 255, 0, 0);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    transition: .3s;
+}
+nav ul li a:hover{
+    background-color: rgba(78, 76, 76, 0);
+    color: chartreuse;
+}
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+.story{
+    flex-direction: column;
+    display: inline-flex;
+    background-color: #93DA97;
+    width: 50%;
+    padding: 20px;
+    height: 500px;
+}
+.story p{
+    font-size: 24px;
+
+}
+.story h2{
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img{
+    width: 50%;
+    display: flex;
+    float: right;
+    height: 500px;
+}
+.img-infi{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 600px;
+    justify-content: stretch;
+    animation:animate 10s linear infinite;
+    margin: 30px;
+}
+img{
+    transition: ease 0.3s;
+    object-fit: cover;
+    overflow: hidden;
+}
+img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+@keyframes animate {
+    to{
+        translate: calc(-3 * 600px);
+    }
+}
+
+.img-infi img{
+    height: 600px;
+    width: 600px;
+}
+.produce{
+    background-color: #EEEDE7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.produce-btn{
+    padding: 20px;
+    background-color: #EEEDE7;
+    color: #5FB257;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.produce-btn button{
+    border-radius: 20px;
+    color: #5FB257;
+    border: solid 2px #5FB257;
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.produce-btn button:hover{
+    color: black;
+    border: 2px solid black;
+}
+.produce-head h1{
+    background-color: #EEEDE7;
+    color: #5FB257;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.produce h2{
+    color: #5FB257;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.produce img{
+    padding:5px;
+    border-radius: 25px;
+}
+.produce .block1,.block2,.block3{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+}
+.block4,.block5{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+}
+.followus-head{
+    color: #93DA97;
+    font-size: 36px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.followus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    background-color: white;
+
+}
+.followus a{
+    transition: .5s;
+    text-decoration: none;
+    color: black;
+    padding:0px 20px;
+}
+.followus a:hover{
+    color: blue;
+}
+.followus span a:hover{
+    color:#d62976;
+}
+
+.clear{
+    display: flex;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.317);
+    z-index: 1;
+    backdrop-filter: blur(1px);
+    
+}
+.farm-operations{
+    flex-direction: column;
+    display: inline-flex;
+    background-color: #93DA97;
+    width: 50%;
+    padding: 20px;
+    height: 500px;
+}
+.farm-operations p{
+    font-size: 24px;
+
+}
+.farm-operations h2{
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.farm-operations-img{
+    width: 50%;
+    display: flex;
+    float: right;
+    height: 500px;
+}
+
+@media (max-width:1270px) {
+    .story{
+        width: 100%;
+    }
+    .img{
+        display: block;
+        float: none;        
+    }
+    .farm-operations{
+        width: 100%;
+    }
+    .farm-operations-img{
+        display: block;
+        float: none;        
+    }
+        .produce-head{
+        display: block;
+        margin-top: 80px;
+    }
+    .block4,.block5{
+        display: none;
+    }
+}
+.history{
+    background-color: #5FB257;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.history h1{
+    color: rgb(0, 0, 0);
+}
+.history h2{
+    font-weight: 500;
+}
+@media (max-width:1500px) {
+    .img{
+        width: 50%;
+    }
+    .farm-operations-img{
+        width: 50%;
+    }
+}
+
+@media (max-width:900px) {
+    nav{
+        border-radius: 0;
+    }
+    nav ul{
+        backdrop-filter: blur(3px);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color:#059212;
+        gap: 0;
+        overflow: hidden;
+        
+    }
+    nav ul li a{
+        background-color:rgba(255, 255, 255, 0);
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    .story{
+        width: 100%;
+        height: 75%;
+
+    }
+    .img{
+        float: none;
+        width: 900px;
+        margin-top: 10px; 
+    }
+    .produce{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .produce .block1,.block2,.block3{
+        
+        width:70%;
+    }
+    .produce-head{
+        margin: 0;
+        display: block;
+    }
+    .block4,.block5{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .farm-operations{
+        width: 100%;
+        height: 93%;
+
+    }
+    .farm-operations-img{
+        float: none;
+        width: 900px;
+        
+    }
+}

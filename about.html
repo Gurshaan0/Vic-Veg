@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vic Veg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="download.jpg" type="image">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1><span>Vic </span>Veg</h1>
+      </div>
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="produce.html">Produce</a></li>
+
+      </ul>
+      <div class="menu-icon">
+        <i class="bx bx-list-ul" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+    <div class="history">
+      <h1>Our History</h1>
+      <h2>
+        Harpreet Singh Emigrated To Australia in 1965 and Began Working.
+      </h2>
+      <p>
+
+      </p>
+    </div>
+    <div class="farm-operations">
+      <h2>Farm Operations</h2>
+      <br>
+      <p>Vic Veg Farm operates more than 100 Acres across Katandra West in Victoria.
+
+Industry leaders in the production of Cabbage, Zucchini and Broccoli, the consistent supply of irrigation water from Melbourne Water means that crops can be produced all year.
+
+Our state-of-the-art facilities and equipment include dedicated harvesting and processing equipment, packhouse and cool room storage facilities with the latest farm machinery operating 365 days a year. 
+
+We utilise the latest genetics across our crop varieties, with our fennel sought for its taste, size and quality. </p>
+    </div>
+    <div class="farm-operations-img">
+      <img src="images/cutting-1024x499.jpg" alt="">
+    </div>
+
+
+
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "300px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
